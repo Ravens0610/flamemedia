@@ -4,7 +4,7 @@ const fs = require('fs');
 const db = JSON.parse(fs.readFileSync('db.json'))
 
 const socket = require("socket.io");
-const server = app.listen(3000, () => { console.log("Server started on a port that I will not say. LOL sike its :3000") });
+const server = app.listen(3000, () => { console.log("Server started on port 3000") });
 const io = socket(server);
 
 app.use(express.static("public"));
